@@ -7,9 +7,9 @@
  * 
  * @author: Erick Barrera - 231238
  * @date: 15/10/23
- * @version: 1.0.0
- * @lastUpdate: 15/10/23
- * Changes: ---
+ * @version: 1.0.1
+ * @lastUpdate: 16/10/23
+ * Changes: mejoras en el formato de mensaje
  */
 import java.util.ArrayList;
 import java.util.Collections;
@@ -171,32 +171,32 @@ public class Biblioteca {
                     if (recurso instanceof Libro) {
                         Libro libroTemp = (Libro) recurso;
                         System.out.println("\n");
-                        libroTemp.Cita();
+                        System.out.println("-"+libroTemp.Cita());
                         count++;
                     }else if (recurso instanceof ArticuloC) {
                         ArticuloC articuloTemp = (ArticuloC) recurso;
                         System.out.println("\n");
-                        articuloTemp.Cita();
+                        System.out.println("-"+articuloTemp.Cita());
                         count++;
                     }else  if (recurso instanceof DVD) {
                         DVD dvdTemp = (DVD) recurso;
                         System.out.println("\n");
-                        dvdTemp.Cita();
+                        System.out.println("-"+dvdTemp.Cita());
                         count++;
                     } else if(recurso instanceof Tesis){
                         Tesis tesisTemp = (Tesis) recurso;
                         System.out.println("\n");
-                        tesisTemp.Cita();
+                        System.out.println("-"+tesisTemp.Cita());
                         count++;
                     }else if (recurso instanceof Web) {
                         Web webTemp = (Web) recurso;
                         System.out.println("\n");
-                        webTemp.Cita();
+                        System.out.println("-"+webTemp.Cita());
                         count++;
                     } else if (recurso instanceof Periodico) {
                         Periodico periodicoTemp = (Periodico) recurso;
                         System.out.println("\n");
-                        periodicoTemp.Cita();
+                        System.out.println("-"+periodicoTemp.Cita());
                         count++;
                     }
                 }
