@@ -1,3 +1,16 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Departamento de Ciencias de la Computación
+ * Programación Orientada a Objetos
+ * 
+ * clase para recolectar y citar datos de artìculos cientìficos 
+ * 
+ * @author: Isabella Ramírez 
+ * @date: 14/10/23
+ * @version: 1.0.0
+ * @lastUpdate: 15/10/23
+ * Changes: ---
+ */
 public class ArticuloC extends Recurso {
     private int volumen;
     private int edicion;

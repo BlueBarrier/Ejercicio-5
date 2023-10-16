@@ -6,7 +6,7 @@
  * clase para almacenar y crear los datos bibliográficos de los libros.
 
  * 
- * @author: Erick Barrera - 231238, Isabella Ramírez - 
+ * @author: Erick Barrera - 231238
  * @date: 13/10/23
  * @version: 1.0.0
  * @lastUpdate: 13/10/23
