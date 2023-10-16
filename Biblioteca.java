@@ -49,6 +49,7 @@ public class Biblioteca {
             }
         }
         for (String genero : generos) {
+            int count =0;
             System.out.println("\nGénero: "+ genero);
             for (Object recurso : recursos) {
                 Recurso temp = (Recurso) recurso;
@@ -56,30 +57,37 @@ public class Biblioteca {
                     if (recurso instanceof Libro) {
                         Libro libroTemp = (Libro) recurso;
                         System.out.println("\n");
-                        System.out.println(libroTemp.Cita());
+                        System.out.println("-"+libroTemp.Cita());
+                        count++;
                     }else if (recurso instanceof ArticuloC) {
                         ArticuloC articuloTemp = (ArticuloC) recurso;
                         System.out.println("\n");
-                        System.out.println(articuloTemp.Cita());
+                        System.out.println("-"+articuloTemp.Cita());
+                        count++;
                     }else  if (recurso instanceof DVD) {
                         DVD dvdTemp = (DVD) recurso;
                         System.out.println("\n");
-                        System.out.println(dvdTemp.Cita());
+                        System.out.println("-"+dvdTemp.Cita());
+                        count++;
                     } else if(recurso instanceof Tesis){
                         Tesis tesisTemp = (Tesis) recurso;
                         System.out.println("\n");
-                        System.out.println(tesisTemp.Cita());
+                        System.out.println("-"+tesisTemp.Cita());
+                        count++;
                     }else if (recurso instanceof Web) {
                         Web webTemp = (Web) recurso;
                         System.out.println("\n");
-                        System.out.println(webTemp.Cita());
+                        System.out.println("-"+webTemp.Cita());
+                        count++;
                     } else if (recurso instanceof Periodico) {
                         Periodico periodicoTemp = (Periodico) recurso;
                         System.out.println("\n");
-                        System.out.println(periodicoTemp.Cita());
+                        System.out.println("-"+periodicoTemp.Cita());
+                        count++;
                     }
                 }
             }
+            System.out.println("Total: "+count);
         }
     }
 
@@ -97,6 +105,7 @@ public class Biblioteca {
             }
         }
         for (String autor : autores) {
+            int count = 0;
             System.out.println("\nAutor: "+ autor);
             for (Object recurso : recursos) {
                 Recurso temp = (Recurso) recurso;
@@ -104,30 +113,37 @@ public class Biblioteca {
                     if (recurso instanceof Libro) {
                         Libro libroTemp = (Libro) recurso;
                         System.out.println("\n");
-                        System.out.println(libroTemp.Cita());
+                        System.out.println("-"+libroTemp.Cita());
+                        count++;
                     }else if (recurso instanceof ArticuloC) {
                         ArticuloC articuloTemp = (ArticuloC) recurso;
                         System.out.println("\n");
-                        System.out.println(articuloTemp.Cita());
+                        System.out.println("-"+articuloTemp.Cita());
+                        count++;
                     }else  if (recurso instanceof DVD) {
                         DVD dvdTemp = (DVD) recurso;
                         System.out.println("\n");
-                        System.out.println(dvdTemp.Cita());
+                        System.out.println("-"+dvdTemp.Cita());
+                        count++;
                     } else if(recurso instanceof Tesis){
                         Tesis tesisTemp = (Tesis) recurso;
                         System.out.println("\n");
-                        System.out.println(tesisTemp.Cita());
+                        System.out.println("-"+tesisTemp.Cita());
+                        count++;
                     }else if (recurso instanceof Web) {
                         Web webTemp = (Web) recurso;
                         System.out.println("\n");
-                        System.out.println(webTemp.Cita());
+                        System.out.println("-"+webTemp.Cita());
+                        count++;
                     } else if (recurso instanceof Periodico) {
                         Periodico periodicoTemp = (Periodico) recurso;
                         System.out.println("\n");
-                        System.out.println(periodicoTemp.Cita());
+                        System.out.println("-"+periodicoTemp.Cita());
+                        count++;
                     }
                 }
             }
+            System.out.println("Total: "+count);
         }
     }
 
@@ -147,6 +163,7 @@ public class Biblioteca {
         }
         Collections.sort(fechas, Collections.reverseOrder()); // ordenar del año más reciente al más antigüo
         for (String fecha : fechas) {
+            int count = 0;
             System.out.println("\nAño: "+ fecha);
             for (Object recurso : recursos) {
                 Recurso temp = (Recurso) recurso;
@@ -155,29 +172,36 @@ public class Biblioteca {
                         Libro libroTemp = (Libro) recurso;
                         System.out.println("\n");
                         libroTemp.Cita();
+                        count++;
                     }else if (recurso instanceof ArticuloC) {
                         ArticuloC articuloTemp = (ArticuloC) recurso;
                         System.out.println("\n");
                         articuloTemp.Cita();
+                        count++;
                     }else  if (recurso instanceof DVD) {
                         DVD dvdTemp = (DVD) recurso;
                         System.out.println("\n");
                         dvdTemp.Cita();
+                        count++;
                     } else if(recurso instanceof Tesis){
                         Tesis tesisTemp = (Tesis) recurso;
                         System.out.println("\n");
                         tesisTemp.Cita();
+                        count++;
                     }else if (recurso instanceof Web) {
                         Web webTemp = (Web) recurso;
                         System.out.println("\n");
                         webTemp.Cita();
+                        count++;
                     } else if (recurso instanceof Periodico) {
                         Periodico periodicoTemp = (Periodico) recurso;
                         System.out.println("\n");
                         periodicoTemp.Cita();
+                        count++;
                     }
                 }
             }
+            System.out.println("Total: "+count);
         }
     }
 
@@ -234,7 +258,7 @@ public class Biblioteca {
                  System.out.println("Recurso creado");
                 break;
             case 4:
-                recursos.add(new Periodico(entrada.pedirNombre(), entrada.pedirFecha(),
+                recursos.add(new Periodico(entrada.pedirNombre(),entrada.pedirAutor() ,entrada.pedirFecha(),
                  entrada.pedirGenero(), entrada.pedirNombrePeriodico(), entrada.pedirEnlace()));
                  System.out.println("Recurso creado");
                 break;

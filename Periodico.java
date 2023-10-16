@@ -10,8 +10,8 @@ public class Periodico extends Recurso {
      * @param nombrePeriodico El nombre específico del periódico.
      * @param enlace El enlace o URL del periódico.
      */
-    public Periodico(String nombre, String fecha, String genero, String nombrePeriodico, String enlace) {
-        super(nombre, null, null, fecha, genero, "Periódico");
+    public Periodico(String nombre, String autor, String fecha, String genero, String nombrePeriodico, String enlace) {
+        super(nombre, autor, null, fecha, genero, "Periódico");
         this.nombrePeriodico = nombrePeriodico;
         this.enlace = enlace;
     }
